@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 import AccordionSection from "./AccordionSection"
 import {
-  PhotoshopIcon, InDesignIcon, IllustratorIcon,
+  PhotoshopIcon, InDesignIcon, IllustratorIcon, AnimateIcon,
   WordIcon, ExcelIcon, PowerPointIcon,
   FigmaIcon, WixIcon, ShopifyIcon,
   VSCodeIcon, HTMLIcon, CSSIcon, JavaScriptIcon, ReactIcon,
@@ -48,6 +48,7 @@ export default function ProgramsSection({ accordionState, onToggle }) {
               <SkillRow Icon={PhotoshopIcon} label="Photoshop" description="Basic photo editing, cropping, working with layers, and retouching." />
               <SkillRow Icon={InDesignIcon} label="InDesign" description="Basic video editing, timeline management, color correction, and adding effects." />
               <SkillRow Icon={IllustratorIcon} label="Illustrator" description="Working with vectors, designing logos, icons, and graphic elements." />
+              <SkillRow Icon={AnimateIcon} label="Animate" description="Creating simple animations, working with timelines, and adding motion to graphic elements." />
             </div>
           </AccordionSection>
         </div>

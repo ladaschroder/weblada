@@ -22,9 +22,14 @@ export default function ContactSection() {
             <p>E-mail: lada.schroder@gmail.com</p>
             <p>Tel: +420 720327693</p>
             <p>IG: lada.schroder</p>
-            <p className="font-['Helvetica:Bold',sans-serif] underline pt-5 cursor-pointer">
-              Download CV
-            </p>
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-['Helvetica:Bold',sans-serif] underline pt-5 cursor-pointer block"
+            >
+              Open CV
+            </a>
           </div>
         </div>
 

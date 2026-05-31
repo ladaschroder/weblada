@@ -18,6 +18,15 @@ export function PhotoshopIcon() {
   )
 }
 
+export function AnimateIcon() {
+  return (
+    <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+      <rect width="50" height="50" rx="8" fill="#00005B" />
+      <text x="25" y="34" fontSize="18" fontWeight="bold" fill="#9DB8FF" textAnchor="middle" fontFamily="Arial, sans-serif">An</text>
+    </svg>
+  )
+}
+
 export function InDesignIcon() {
   return (
     <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
