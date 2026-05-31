@@ -1,0 +1,264 @@
+@import 'tailwindcss';
+
+body,
+body * {
+  font-family: Helvetica, Arial, sans-serif !important;
+  line-height: 1.5 !important;
+}
+
+.contact-info-text {
+  margin-top: 8px !important;
+  line-height: 1.4 !important;
+}
+
+.contact-info-text p {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.project-target-modal p {
+  text-align: justify !important;
+  line-height: 1.5 !important;
+}
+
+.project-target-modal h3 {
+  font-weight: bold !important;
+}
+
+.portfolio-accordion-trigger {
+  appearance: none !important;
+  display: flex !important;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  color: #000 !important;
+  padding: 34px 11px !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  font: inherit !important;
+  text-align: left !important;
+}
+
+.portfolio-accordion-trigger:hover,
+.portfolio-accordion-trigger:focus,
+.portfolio-accordion-trigger:active {
+  background: #fff !important;
+  color: #000 !important;
+  outline: none !important;
+}
+
+.portfolio-accordion-title {
+  margin: 0 !important;
+  color: #000 !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 40px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+.project-card-overlay {
+  appearance: none !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.project-skill-button {
+  appearance: none !important;
+  position: relative !important;
+  z-index: 20 !important;
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #000 !important;
+  box-shadow: none !important;
+}
+
+.project-skill-button:hover,
+.project-skill-button:focus,
+.project-skill-button:active {
+  background: #fff !important;
+  color: #000 !important;
+  outline: none !important;
+}
+
+.project-target-modal {
+  display: none !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+.project-target-modal.project-target-modal--open {
+  display: flex !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9999 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 32px 40px !important;
+  pointer-events: auto !important;
+}
+
+.project-target-modal__backdrop {
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+  z-index: 0 !important;
+  cursor: pointer !important;
+}
+
+.project-target-modal__window {
+  position: relative !important;
+  z-index: 1 !important;
+  width: calc(100vw - 140px) !important;
+  max-width: 1740px !important;
+  max-height: 82vh !important;
+  overflow: auto !important;
+  border: 1px solid #000 !important;
+  border-radius: 28px !important;
+  background: #fff !important;
+  padding: 36px 44px !important;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.24) !important;
+}
+
+.project-target-modal__window > div {
+  border: 0;
+  padding: 0;
+}
+
+.project-target-modal__window > div > .flex {
+  flex-direction: row !important;
+  gap: 44px;
+  align-items: flex-start;
+}
+
+.project-target-modal__window > div > .flex > .flex-1 {
+  padding-right: 72px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-heading-text {
+    font-size: 52px !important;
+  }
+
+  .portfolio-name-text {
+    font-size: 32px !important;
+    margin-top: -35px !important;
+  }
+
+  .hero-photo {
+    display: none !important;
+  }
+
+  .folders-nav {
+    gap: 12px !important;
+  }
+
+  .folders-nav p {
+    font-size: 9px !important;
+  }
+
+  .folders-nav svg {
+    width: 72px !important;
+    height: 58px !important;
+  }
+
+  .folders-nav > div > div {
+    width: 100px !important;
+  }
+
+  .folders-nav > div > div > div:first-child {
+    width: 72px !important;
+    height: 58px !important;
+  }
+
+  body h2.section-heading {
+    font-size: 36px !important;
+  }
+
+  .portfolio-accordion-title {
+    font-size: 24px !important;
+  }
+
+  .mywork-header {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .mywork-heading {
+    font-size: 28px !important;
+    white-space: nowrap !important;
+  }
+
+  .mywork-subtitle {
+    margin-top: 0 !important;
+    text-align: right !important;
+    align-self: flex-end !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .projects-grid > div {
+    margin-top: 0 !important;
+    grid-column: auto !important;
+  }
+
+  .contact-photo {
+    display: none !important;
+  }
+
+  .page-wrapper {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .project-target-modal__window > div > .flex {
+    flex-direction: column !important;
+  }
+
+  .project-target-modal__window > div > .flex > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .project-target-modal__window {
+    width: calc(100vw - 32px) !important;
+    padding: 20px 16px !important;
+  }
+
+  .project-target-modal.project-target-modal--open {
+    padding: 16px !important;
+  }
+}
+
+.project-target-modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #000;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 34px;
+  line-height: 1;
+  text-decoration: none;
+}
