@@ -3,7 +3,7 @@ import img from "../../imports/assets/d54a3f6e872b22a25c2a8105db4ae3ce7299a8b1.p
 export function CodeProjectsDetail() {
   return (
     <div className="bg-white border border-black p-6 w-full">
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <div className="w-[296px] h-[240px] overflow-hidden shrink-0">
           <img src={img} alt="Code projects" className="w-full h-full object-cover" />
         </div>

@@ -3,7 +3,7 @@ import img from "../../imports/assets/75a29072b65baaffe37531393de5a406fd94be55.p
 export function FashionShowDetail() {
   return (
     <div className="bg-white border border-black p-6 w-full">
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <div className="w-[279px] shrink-0 self-start" style={{ marginTop: "20px" }}>
           <img src={img} alt="Fashion show" className="w-full h-auto" />
         </div>

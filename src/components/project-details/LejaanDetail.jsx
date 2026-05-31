@@ -3,7 +3,7 @@ import img from "../../imports/assets/6f363f3233952e9b8b7797c3ce298eb542953f74.p
 export function LejaanDetail() {
   return (
     <div className="bg-white border border-black p-6 w-full min-h-[400px]">
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <div className="w-[281px] shrink-0">
           <img src={img} alt="LEJAAN" className="w-full h-auto" />
         </div>

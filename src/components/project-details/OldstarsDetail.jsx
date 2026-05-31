@@ -4,7 +4,7 @@ import img2 from "../../imports/assets/72aafcaf14e9cdb5281e8a0a7d7eca807b060930.
 export function OldstarsDetail() {
   return (
     <div className="bg-white border border-black p-6 w-full">
-      <div className="flex gap-6 mb-6">
+      <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="w-[290px] shrink-0">
           <img src={img1} alt="OLDstars" className="w-full h-auto" />
         </div>
@@ -24,7 +24,7 @@ export function OldstarsDetail() {
         </div>
       </div>
 
-      <div className="w-[494px] h-[661px] overflow-hidden mx-auto" style={{ marginTop: "24px" }}>
+      <div className="w-full max-w-[494px] overflow-hidden mx-auto" style={{ marginTop: "24px" }}>
         <img src={img2} alt="Festival content" className="w-full h-full object-cover" />
       </div>
     </div>

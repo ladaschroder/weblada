@@ -135,7 +135,6 @@ body * {
 }
 
 .project-target-modal__window > div > .flex {
-  flex-direction: row !important;
   gap: 44px;
   align-items: flex-start;
 }
@@ -144,14 +143,36 @@ body * {
   padding-right: 72px;
 }
 
-@media (max-width: 768px) {
-  .portfolio-heading-text {
-    font-size: 52px !important;
-  }
+/* Fluid hero typography — scales smoothly with viewport */
+.portfolio-heading-text {
+  font-size: clamp(48px, 16vw, 120px) !important;
+}
 
+.portfolio-name-text {
+  font-size: clamp(26px, 8vw, 60px) !important;
+}
+
+.folders-nav svg {
+  width: clamp(72px, 9.5vw, 100px) !important;
+  height: clamp(58px, 7.6vw, 80px) !important;
+}
+
+.folders-nav > div > div {
+  width: clamp(100px, 12.5vw, 140px) !important;
+}
+
+.folders-nav > div > div > div:first-child {
+  width: clamp(72px, 9.5vw, 100px) !important;
+  height: clamp(58px, 7.6vw, 80px) !important;
+}
+
+.folders-nav p {
+  font-size: clamp(9px, 1.2vw, 11px) !important;
+}
+
+@media (max-width: 768px) {
   .portfolio-name-text {
-    font-size: 32px !important;
-    margin-top: -35px !important;
+    margin-top: 6px !important;
   }
 
   .hero-photo {
@@ -160,24 +181,6 @@ body * {
 
   .folders-nav {
     gap: 12px !important;
-  }
-
-  .folders-nav p {
-    font-size: 9px !important;
-  }
-
-  .folders-nav svg {
-    width: 72px !important;
-    height: 58px !important;
-  }
-
-  .folders-nav > div > div {
-    width: 100px !important;
-  }
-
-  .folders-nav > div > div > div:first-child {
-    width: 72px !important;
-    height: 58px !important;
   }
 
   body h2.section-heading {
@@ -219,11 +222,67 @@ body * {
     display: none !important;
   }
 
-  .page-wrapper {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+  .project-target-modal__window {
+    width: calc(100vw - 32px) !important;
+    padding: 20px 16px !important;
   }
 
+  .project-target-modal.project-target-modal--open {
+    padding: 16px !important;
+  }
+
+  /* Remove double padding — sections have their own px-4 */
+  .page-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Smaller text in project cards on mobile */
+  .projects-grid p {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Smaller about section text on mobile */
+  .about-text p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Tighter accordion trigger padding on mobile */
+  .portfolio-accordion-trigger {
+    padding: 20px 8px !important;
+  }
+
+  /* Contact section text smaller on mobile */
+  .contact-info-text {
+    font-size: 15px !important;
+  }
+
+  /* Section headings left-aligned on mobile */
+  .section-heading {
+    text-align: left !important;
+  }
+
+  /* Internship heading: left-align on mobile */
+  .internship-heading-wrap {
+    justify-content: flex-start !important;
+  }
+
+  /* Intro paragraph: full width on mobile */
+  .internship-intro {
+    max-width: 100% !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* MyWork subtitle: left-align on mobile */
+  .mywork-subtitle {
+    align-self: flex-start !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 860px) {
   .project-target-modal__window > div > .flex {
     flex-direction: column !important;
   }
@@ -233,13 +292,8 @@ body * {
     max-width: 100% !important;
   }
 
-  .project-target-modal__window {
-    width: calc(100vw - 32px) !important;
-    padding: 20px 16px !important;
-  }
-
-  .project-target-modal.project-target-modal--open {
-    padding: 16px !important;
+  .project-target-modal__window > div > .flex > .flex-1 {
+    padding-right: 0 !important;
   }
 }
 

@@ -53,7 +53,7 @@ export default function About() {
       transition={{ duration: 0.5 }}
     >
       <div
-        className="font-['Helvetica:Regular',sans-serif] text-[18px] text-black leading-[1.5] max-w-[1229px] space-y-4 mb-8"
+        className="about-text font-['Helvetica:Regular',sans-serif] text-[18px] text-black leading-[1.5] max-w-[1229px] space-y-4 mb-8"
         style={{ textAlign: "justify" }}
       >
         {ABOUT_PARAGRAPHS.map((text, i) => (

@@ -3,7 +3,7 @@ import img from "../../imports/assets/ac84f9612661e2940dcda9cf8a391a242f9e0a58.p
 export function RanraDetail() {
   return (
     <div className="bg-white border border-black p-6 w-full min-h-[400px]">
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <div className="w-[290px] shrink-0 self-start" style={{ marginTop: "20px" }}>
           <img src={img} alt="RANRA website" className="w-full h-auto" />
         </div>

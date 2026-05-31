@@ -3,7 +3,7 @@ import img from "../../imports/assets/7a39f637306895db4d93dd5326c254b30cc6cf1a.p
 export function ExhibitionDetail() {
   return (
     <div className="bg-white border border-black p-6 w-full">
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <div className="w-[291px] h-[240px] overflow-hidden shrink-0">
           <img src={img} alt="Exhibition" className="w-full h-full object-cover" />
         </div>

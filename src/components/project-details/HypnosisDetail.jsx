@@ -3,7 +3,7 @@ import img from "../../imports/assets/1a870e8e4d9594a2d0db89025d9ffd7d23c2c7ff.p
 export function HypnosisDetail() {
   return (
     <div className="bg-white border border-black p-6 w-full">
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <div className="w-[369px] shrink-0 self-start" style={{ marginTop: "20px" }}>
           <img src={img} alt="Hypnosis" className="w-full h-auto" />
         </div>

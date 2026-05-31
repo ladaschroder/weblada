@@ -33,11 +33,8 @@ export default function Hero() {
   return (
     <div className="hero-container max-w-[1271px] mx-auto px-4 pt-0 pb-6">
       <div className="hero-flex flex items-start justify-between gap-8 mb-4">
-        <div
-          className="flex flex-col justify-between"
-          style={{ minHeight: "560px" }}
-        >
-          <div style={{ marginTop: "140px" }}>
+        <div className="flex flex-col justify-between w-full md:w-auto md:min-h-[560px]">
+          <div className="md:mt-[140px] mt-4">
             <motion.p
               className="portfolio-heading-text font-['Helvetica:Regular',sans-serif] text-[120px] text-black leading-[0.9] mb-0"
               initial={{ opacity: 0, x: -30 }}
@@ -58,7 +55,7 @@ export default function Hero() {
             </motion.h1>
           </div>
 
-          <div className="folders-nav flex gap-6">
+          <div className="folders-nav flex gap-6 mt-10 md:mt-0">
             {FOLDERS.map(({ uid, lines, sectionId }, index) => (
               <motion.div
                 key={uid}

@@ -46,12 +46,12 @@ export default function InternshipSection({ onOpenProject, onScrollToSkill }) {
       transition={{ duration: 0.5 }}
     >
       <div className="mb-8">
-        <div className="flex justify-end mb-8">
+        <div className="internship-heading-wrap flex justify-end mb-8">
           <h2 className="section-heading font-['Helvetica:Regular',sans-serif] text-[50px] text-black text-right leading-[1.1]">
             INTERNSHIP<br />AND PROJECTS
           </h2>
         </div>
-        <p className="text-[18px] leading-[1.1] text-left max-w-[400px]" style={{ marginBottom: "60px" }}>
+        <p className="internship-intro text-[18px] leading-[1.1] text-left max-w-[400px]" style={{ marginBottom: "60px" }}>
           I've been involved in projects such as content creation, marketing assistance or organizing fashion shows.
         </p>
       </div>
