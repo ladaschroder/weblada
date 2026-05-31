@@ -53,9 +53,23 @@ export default function Hero() {
             >
               Lada Schröderová
             </motion.h1>
+
+            <motion.div
+              className="ml-[8px] mt-3"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <p className="hero-role-title font-['Helvetica:Regular',sans-serif] text-[18px] text-black leading-tight">
+                Digital Marketing & Project Management
+              </p>
+              <p className="hero-role-subtitle font-['Helvetica:Regular',sans-serif] text-[13px] text-black leading-tight mt-1" style={{ opacity: 0.6 }}>
+                With a background in content creation and front-end development
+              </p>
+            </motion.div>
           </div>
 
-          <div className="folders-nav flex gap-6 mt-10 md:mt-0">
+          <div className="folders-nav flex gap-6 mt-16 md:mt-10">
             {FOLDERS.map(({ uid, lines, sectionId }, index) => (
               <motion.div
                 key={uid}
