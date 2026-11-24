@@ -46,7 +46,7 @@ export default function ProgramsSection({ accordionState, onToggle }) {
           >
             <div className="flex flex-col gap-8">
               <SkillRow Icon={PhotoshopIcon} label="Photoshop" description="Basic photo editing, cropping, working with layers, and retouching." />
-              <SkillRow Icon={InDesignIcon} label="InDesign" description="Basic video editing, timeline management, color correction, and adding effects." />
+              <SkillRow Icon={InDesignIcon} label="InDesign" description="Layout design for print and digital, working with typography, grids, and multi-page documents." />
               <SkillRow Icon={IllustratorIcon} label="Illustrator" description="Working with vectors, designing logos, icons, and graphic elements." />
               <SkillRow Icon={AnimateIcon} label="Animate" description="Creating simple animations, working with timelines, and adding motion to graphic elements." />
             </div>
